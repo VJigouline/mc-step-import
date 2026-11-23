@@ -15,7 +15,7 @@ console.log(result.warnings);       // anything that couldn't be read
 
 ## What it reads
 
-- **Protocols:** AP203 (both editions), AP214 and AP242, detected from `FILE_SCHEMA`. Other protocols with ISO 10303-42 shapes, such as AP209, AP210 and AP238, are read for their shapes. IFC files are refused, with a pointer to [MeerCADIFCImport](https://github.com/VJigouline/MeerCADIFCImport).
+- **Protocols:** AP203 (both editions), AP214 and AP242, detected from `FILE_SCHEMA`. Other protocols with ISO 10303-42 shapes, such as AP209, AP210 and AP238, are read for their shapes. IFC files are refused, with a pointer to [mc-ifc-import](https://github.com/VJigouline/mc-ifc-import).
 - **Shapes:**
   - B-rep solids, with and without voids, and faceted B-reps.
   - Shell- and face-based surface models.

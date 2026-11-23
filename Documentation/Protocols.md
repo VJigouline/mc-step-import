@@ -13,7 +13,7 @@ STEP files name their schema in the header's `FILE_SCHEMA`. That name is followe
 | `AP238` | `INTEGRATED_CNC_SCHEMA`, `AP238_` names | AP238, STEP-NC. |
 | `other` | anything else | Read for its shapes, with a warning. |
 
-IFC schemas (`IFC2X3`, `IFC4` and so on) use the same file format, but they describe buildings with a different data model. Reading one throws `UnsupportedSchemaError`; use [MeerCADIFCImport](https://github.com/VJigouline/MeerCADIFCImport) for those.
+IFC schemas (`IFC2X3`, `IFC4` and so on) use the same file format, but they describe buildings with a different data model. Reading one throws `UnsupportedSchemaError`; use [mc-ifc-import](https://github.com/VJigouline/mc-ifc-import) for those.
 
 ## How they are read
 

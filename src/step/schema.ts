@@ -39,7 +39,7 @@ export function detectSchema(schemas: readonly string[]): StepSchemaInfo {
   const identifier = schemas[0] ?? '';
   const schemaName = identifier.replace(/\{.*$/, '').trim().toUpperCase();
   if (/^IFC/.test(schemaName)) {
-    throw new UnsupportedSchemaError(`${identifier} is an IFC schema: read IFC files with meercad-ifc-import`, identifier);
+    throw new UnsupportedSchemaError(`${identifier} is an IFC schema: read IFC files with mc-ifc-import`, identifier);
   }
   const oid = /\{([^}]*)\}/.exec(identifier)?.[1]?.trim().split(/\s+/).map(Number) ?? [];
   // { 1 0 10303 <part> <edition> ... }
