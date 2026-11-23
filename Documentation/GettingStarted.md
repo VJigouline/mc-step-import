@@ -3,14 +3,14 @@
 ## Install
 
 ```sh
-npm install three github:VJigouline/MeerCADStepImport
+npm install three github:VJigouline/mc-step-import
 ```
 
 ## Load a file into a three.js scene
 
 ```ts
 import * as THREE from 'three';
-import { loadStepAsync, UnsupportedSchemaError, StepSyntaxError } from 'meercad-step-import';
+import { loadStepAsync, UnsupportedSchemaError, StepSyntaxError } from 'mc-step-import';
 
 async function open(file: File, scene: THREE.Scene) {
   try {
@@ -84,7 +84,7 @@ Finer tolerances give smoother curves and more triangles. Each face is limited t
 `readStep` returns the same tree as plain data: nodes with placement matrices, and meshes as typed arrays. Use it in a worker, or to convert to another format:
 
 ```ts
-import { readStep } from 'meercad-step-import';
+import { readStep } from 'mc-step-import';
 
 const result = readStep(text);
 for (const root of result.roots) console.log(root.name, root.children.length, root.meshes.length);

@@ -1,5 +1,5 @@
 {
-  "name": "meercad-step-import",
+  "name": "mc-step-import",
   "version": "1.0.0",
   "description": "STEP (ISO 10303-21) importer for three.js in TypeScript: reads AP203, AP214 and AP242 files, tessellates B-rep solids with analytic and NURBS surfaces, and builds the product and assembly structure, colours and units without WASM.",
   "keywords": [
@@ -60,6 +60,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VJigouline/MeerCADStepImport.git"
+    "url": "git+https://github.com/VJigouline/mc-step-import.git"
   }
 }

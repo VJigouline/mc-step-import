@@ -56,7 +56,7 @@ In a browser, with a bundler that understands `new URL(…, import.meta.url)`:
 
 ```ts
 // step.worker.ts
-import { runStepWorker } from 'meercad-step-import';
+import { runStepWorker } from 'mc-step-import';
 runStepWorker();
 
 // The page
@@ -70,7 +70,7 @@ In Node, wrap `worker_threads`, whose workers are event emitters rather than eve
 ```ts
 // step-worker.mjs
 import { parentPort } from 'node:worker_threads';
-import { runStepWorker } from 'meercad-step-import';
+import { runStepWorker } from 'mc-step-import';
 runStepWorker({
   postMessage: (message, transfer) => parentPort.postMessage(message, transfer),
   addEventListener: (type, listener) => parentPort.on(type, data => listener({ data })),

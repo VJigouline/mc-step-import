@@ -1,6 +1,6 @@
 # Using it in SceneEditor
 
-[SceneEditor](https://github.com/VJigouline/SceneEditor) opens STEP files with MeerCADStepImport. Drop a `.stp`, `.step`, `.p21` or `.stpz` file on the view, or choose one with **Open files** on the Scene tab.
+[SceneEditor](https://github.com/VJigouline/SceneEditor) opens STEP files with mc-step-import. Drop a `.stp`, `.step`, `.p21` or `.stpz` file on the view, or choose one with **Open files** on the Scene tab.
 
 `ThreeSceneService.addStepFile` reads the file as bytes and calls `loadStepAsync`, which also inflates `.stpz` files. It adds the resulting group to the scene, then refits the view.
 

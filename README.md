@@ -1,11 +1,11 @@
-# MeerCADStepImport
+# mc-step-import
 
 A STEP (ISO 10303-21) importer for [three.js](https://threejs.org/), written in TypeScript with no WebAssembly. It reads the CAD application protocols **AP203**, **AP214** and **AP242**, and other APs built on the same ISO 10303-42 geometry. It detects which protocol a file uses from its `FILE_SCHEMA`.
 
 It tessellates B-rep solids and surface models with planar, analytic (cylinder, cone, sphere, torus) and NURBS faces into watertight meshes. It also builds the product and assembly structure, applies the file's colours, and converts the file's units.
 
 ```ts
-import { loadStep } from 'meercad-step-import';
+import { loadStep } from 'mc-step-import';
 
 const result = loadStep(await file.arrayBuffer());
 scene.add(result.group);            // THREE.Group, in metres, Y up
@@ -46,7 +46,7 @@ See [Geometry and protocol support](Documentation/Support.md) for the details an
 The package is not on the npm registry. Install it from GitHub:
 
 ```sh
-npm install github:VJigouline/MeerCADStepImport
+npm install github:VJigouline/mc-step-import
 ```
 
 `three` (r160 or later) is a peer dependency. The package builds itself on install.
